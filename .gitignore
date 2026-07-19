@@ -10,6 +10,7 @@ coverage/
 .next/
 out/
 build/
+.next/cache/
 
 # Environment variables
 .env
