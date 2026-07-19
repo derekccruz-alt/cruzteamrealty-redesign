@@ -10,7 +10,7 @@ const testimonials = [
     quote:
       'Derek and Gina were both present, attentive, and knowledgeable! Willing and able to answer all of my questions, fully understood my needs and put me in the perfect price point. 10/10 would definitely recommend!',
     rating: 5,
-    image: '/images/home1.jpg',
+    image: '/images/adam.jpg',
   },
   {
     name: 'Eric & Bethany Estrada',
