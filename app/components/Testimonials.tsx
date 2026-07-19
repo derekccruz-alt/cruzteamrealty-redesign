@@ -5,10 +5,10 @@ import Link from 'next/link';
 
 const testimonials = [
   {
-    name: 'Sarah M.',
-    title: 'First-Time Buyer',
+    name: 'Adam',
+    title: 'Buyer',
     quote:
-      'Derek made the entire process feel less overwhelming. He explained every step and fought for us during negotiations. Best decision we made.',
+      'Derek and Gina were both present, attentive, and knowledgeable! Willing and able to answer all of my questions, fully understood my needs and put me in the perfect price point. 10/10 would definitely recommend!',
     rating: 5,
     image: '/images/home1.jpg',
   },
