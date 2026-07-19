@@ -1,0 +1,17 @@
+{
+  "name": "cruz-team-realty",
+  "type": "javascript",
+  "build": {
+    "command": "next build",
+    "cwd": "."
+  },
+  "env": {
+    "production": {
+      "build": {
+        "command": "next build",
+        "cwd": "."
+      }
+    }
+  },
+  "pages_build_output_dir": "out"
+}
