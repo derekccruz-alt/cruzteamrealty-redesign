@@ -61,7 +61,7 @@ export function Hero() {
           style={{ animationDelay: '0.2s' }}
         >
           <Image
-            src="https://picsum.photos/seed/derek-open-house-temecula/800/900"
+            src="/images/hero.jpg"
             alt="Derek Cruz at a new-construction open house in Southwest Riverside County"
             fill
             className="object-cover"
