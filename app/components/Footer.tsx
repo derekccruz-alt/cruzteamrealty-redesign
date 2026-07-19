@@ -13,7 +13,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <img
-              src="/images/cruz-logo.png"
+              src="/images/cruz-logo.png?v=2"
               alt="Cruz Team Realty"
               className="h-24 w-auto"
             />

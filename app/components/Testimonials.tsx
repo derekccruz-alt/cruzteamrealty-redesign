@@ -36,7 +36,7 @@ export function Testimonials() {
       {/* Couple Photo */}
       <div className="relative w-full h-64 md:h-80 rounded-sm overflow-hidden shadow-lg animate-fade-in">
         <img
-          src="/images/couple1.jpg"
+          src="/images/couple1.jpg?v=2"
           alt="Derek & Gina Cruz"
           className="w-full h-full object-cover"
         />
