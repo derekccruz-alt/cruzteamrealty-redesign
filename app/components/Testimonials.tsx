@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { Star } from '@phosphor-icons/react';
 import Link from 'next/link';
 
@@ -36,11 +35,10 @@ export function Testimonials() {
     <section className="container-max py-24 md:py-32 space-y-16">
       {/* Couple Photo */}
       <div className="relative w-full h-64 md:h-80 rounded-sm overflow-hidden shadow-lg animate-fade-in">
-        <Image
+        <img
           src="/images/couple1.jpg"
           alt="Derek & Gina Cruz"
-          fill
-          className="object-cover"
+          className="w-full h-full object-cover"
         />
       </div>
 
@@ -68,11 +66,10 @@ export function Testimonials() {
             style={{ animationDelay: `${idx * 100}ms` }}
           >
             <div className="relative h-48 w-full overflow-hidden">
-              <Image
+              <img
                 src={testimonial.image}
                 alt={testimonial.name}
-                fill
-                className="object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="space-y-4 p-6">

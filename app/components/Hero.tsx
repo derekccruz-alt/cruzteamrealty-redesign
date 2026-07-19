@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { ArrowRight } from '@phosphor-icons/react';
 import Link from 'next/link';
 
@@ -60,12 +59,10 @@ export function Hero() {
           className="relative aspect-square lg:aspect-auto lg:h-[600px] rounded-sm overflow-hidden shadow-xl animate-fade-in"
           style={{ animationDelay: '0.2s' }}
         >
-          <Image
+          <img
             src="/images/hero.jpg"
             alt="Derek Cruz at a new-construction open house in Southwest Riverside County"
-            fill
-            className="object-cover"
-            priority
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/30 to-transparent" />
           <p className="absolute bottom-6 left-6 text-sm font-mono uppercase tracking-wider text-cream/90">
