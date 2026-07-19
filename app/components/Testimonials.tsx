@@ -11,6 +11,7 @@ const testimonials = [
     quote:
       'Derek made the entire process feel less overwhelming. He explained every step and fought for us during negotiations. Best decision we made.',
     rating: 5,
+    image: '/images/home1.jpg',
   },
   {
     name: 'James & Claire T.',
@@ -18,6 +19,7 @@ const testimonials = [
     quote:
       'Listed with Derek. Sold 8% above asking in 12 days. The marketing strategy he outlined from day one actually worked.',
     rating: 5,
+    image: '/images/home2.jpg',
   },
   {
     name: 'Michael R.',
@@ -25,12 +27,23 @@ const testimonials = [
     quote:
       'Derek negotiated $20k in upgrades. He understood exactly how builders price and where we could add value. Exceptional.',
     rating: 5,
+    image: '/images/home3.jpg',
   },
 ];
 
 export function Testimonials() {
   return (
     <section className="container-max py-24 md:py-32 space-y-16">
+      {/* Couple Photo */}
+      <div className="relative w-full h-64 md:h-80 rounded-sm overflow-hidden shadow-lg animate-fade-in">
+        <Image
+          src="/images/couple1.jpg"
+          alt="Derek & Gina Cruz"
+          fill
+          className="object-cover"
+        />
+      </div>
+
       {/* Featured Quote */}
       <div className="space-y-6 animate-fade-in">
         <div className="flex items-center gap-4">
@@ -51,18 +64,28 @@ export function Testimonials() {
         {testimonials.map((testimonial, idx) => (
           <article
             key={testimonial.name}
-            className="space-y-4 p-6 border border-sage/20 rounded-sm hover:border-sage/40 hover:bg-charcoal/2 transition-all duration-200 animate-fade-in"
+            className="space-y-4 overflow-hidden border border-sage/20 rounded-sm hover:border-sage/40 transition-all duration-200 animate-fade-in"
             style={{ animationDelay: `${idx * 100}ms` }}
           >
-            <div className="flex gap-1">
-              {Array.from({ length: testimonial.rating }).map((_, i) => (
-                <Star key={i} size={18} weight="fill" className="text-sage" />
-              ))}
+            <div className="relative h-48 w-full overflow-hidden">
+              <Image
+                src={testimonial.image}
+                alt={testimonial.name}
+                fill
+                className="object-cover"
+              />
             </div>
-            <p className="subtext">{testimonial.quote}</p>
-            <div>
-              <p className="font-semibold text-charcoal">{testimonial.name}</p>
-              <p className="text-sm text-charcoal/60">{testimonial.title}</p>
+            <div className="space-y-4 p-6">
+              <div className="flex gap-1">
+                {Array.from({ length: testimonial.rating }).map((_, i) => (
+                  <Star key={i} size={18} weight="fill" className="text-sage" />
+                ))}
+              </div>
+              <p className="subtext">{testimonial.quote}</p>
+              <div>
+                <p className="font-semibold text-charcoal">{testimonial.name}</p>
+                <p className="text-sm text-charcoal/60">{testimonial.title}</p>
+              </div>
             </div>
           </article>
         ))}
