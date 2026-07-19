@@ -13,10 +13,10 @@ const testimonials = [
     image: '/images/home1.jpg',
   },
   {
-    name: 'James & Claire T.',
-    title: 'Home Sellers',
+    name: 'Eric & Bethany Estrada',
+    title: 'First-Time Buyers',
     quote:
-      'Listed with Derek. Sold 8% above asking in 12 days. The marketing strategy he outlined from day one actually worked.',
+      'This was such a great and easy experience! Thank you so much Derek and Gina and the rest of the Meritage Homes team for helping us through the whole process.',
     rating: 5,
     image: '/images/home2.jpg',
   },
