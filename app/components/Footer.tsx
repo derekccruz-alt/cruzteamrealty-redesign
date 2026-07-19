@@ -12,7 +12,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="heading-md text-cream">Cruz Team Realty</h3>
+            <img
+              src="/images/cruz-logo.png"
+              alt="Cruz Team Realty"
+              className="h-24 w-auto"
+            />
             <p className="text-cream/70 text-sm leading-relaxed">
               Local real estate expertise. 27+ years of combined experience serving Southwest Riverside County families.
             </p>
